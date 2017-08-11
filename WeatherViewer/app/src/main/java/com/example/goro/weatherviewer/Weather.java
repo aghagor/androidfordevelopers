@@ -19,11 +19,11 @@ class Weather {
 
     public Weather(long timeStamp, double minTemp, double maxTemp, double humidity, String description, String iconName) {
         NumberFormat numberFormat = NumberFormat.getInstance();
-        numberFormat.setMaximumFractionDigits(0);
+        numberFormat.setMaximumFractionDigits(1);
 
         this.dayOfWeek = convertTimeStampToDay(timeStamp);
-        this.minTemp = numberFormat.format(minTemp) + "\u00B0F";
-        this.maxTemp = numberFormat.format(maxTemp) + "\u00B0F";
+        this.minTemp = numberFormat.format(minTemp-273.15) + "\u00B0C";
+        this.maxTemp = numberFormat.format(maxTemp-273.15) + "\u00B0C";
         this.humidity = NumberFormat.getPercentInstance().format(humidity / 100.0);
         this.description = description;
         this.iconURL = "http://openweathermap.org/img/w/" + iconName + ".png";
