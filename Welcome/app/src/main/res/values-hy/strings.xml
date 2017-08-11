@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Բարի գալուստ</string>
+    <string name="hello_text" translatable="false">Բարի Գալուստ իմ առաջին հավելված, որը պատրաստվել է այս գրքի շրջանակներում</string>
+</resources>

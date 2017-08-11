@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">Welcome</string>
+    <string name="hello_text" translatable="false">Welcome to my first app in this book</string>
+</resources>
