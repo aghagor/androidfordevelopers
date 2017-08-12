@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         if (!tags.contains(tag)) {
             tags.add(tag);
             Collections.sort(tags, String.CASE_INSENSITIVE_ORDER);
-            adapter.notifyDataSetCHanged();
+            adapter.notifyDataSetChanged();
         }
     }
 
