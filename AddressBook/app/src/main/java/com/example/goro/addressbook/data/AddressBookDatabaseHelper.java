@@ -1,5 +1,6 @@
 package com.example.goro.addressbook.data;
 
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -8,6 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class AddressBookDatabaseHelper extends SQLiteOpenHelper {
+    public AddressBookDatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
